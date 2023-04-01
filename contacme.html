@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+</head><style type="text/css">
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+	<form action="#" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+  
+ <button class="contact-button" onclick="window.open('ok.html'),'_self'">Submitt</button>
+</form>
+</body>
+</html>
